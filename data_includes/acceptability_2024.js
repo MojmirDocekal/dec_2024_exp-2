@@ -59,22 +59,22 @@ var items = [ ["sep", "Separator", { }],
 [["first-item8-nonum-pl", 1], aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kávu robustu a kávu arabiku, v přípravném kurzu jsme tyto kávy studovali.</b></p>"}}],
 
 
-["firstfiller1-good", aj, {s: {html: "<p>Kontext: v současné době se vyrábí různé druhy minerálních vod. Dva obchodníci s nápoji (A a B) si povídají o minerálních vodách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o minerální vodu Mattoni, včera jsme prodali 153 těchto vod.</b></p>"} }],
+["firstfiller-item1", aj, {s: {html: "<p>Kontext: v současné době se vyrábí různé druhy minerálních vod. Dva obchodníci s nápoji (A a B) si povídají o minerálních vodách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o minerální vodu Mattoni, včera jsme prodali 153 těchto vod.</b></p>"} }],
 
-["firstfiller_item2-bad", aj, {s: {html: "<p>  Kontext: v současné době se hodně prodávají romány. Dva knihkupci (A a B) si povídají o knihách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o román od autora X, včera jsme prodali všechen jeho román.</b></p>"} }],
+["firstfiller-item2", aj, {s: {html: "<p>  Kontext: v současné době se hodně prodávají romány. Dva knihkupci (A a B) si povídají o knihách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o román od autora X, včera jsme prodali všechen jeho román.</b></p>"} }],
 
-["firstfiller1-item3-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů čokolád. Dva cukráři (A a B) si povídají o čokoládách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o čokoládu s oříšky, včera jsme prodali 15 těchto čokolád.</b></p>"} }],
+["firstfiller1-item3", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů čokolád. Dva cukráři (A a B) si povídají o čokoládách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o čokoládu s oříšky, včera jsme prodali 15 těchto čokolád.</b></p>"} }],
 
-["firstfiller_item4-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně prodávají obrazy. Dva galeristé (A a B) si povídají o obrazech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten portrét od malíře X, včera jsme prodali všechen jeho portrét.</b></p>"} }],
+["firstfiller-item4", aj, {s: {html: "<p> Kontext: v současnosti se hodně prodávají obrazy. Dva galeristé (A a B) si povídají o obrazech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten portrét od malíře X, včera jsme prodali všechen jeho portrét.</b></p>"} }],
 
-["firstfiller1-item5-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů jogurtů. Dva obchodníci s mléčnými výrobky (A a B) si povídají o jogurtech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o jogurt s jahodami, včera jsme prodali 25 těchto jogurtů.</b></p>"} }],
+["firstfiller1-item5", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů jogurtů. Dva obchodníci s mléčnými výrobky (A a B) si povídají o jogurtech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o jogurt s jahodami, včera jsme prodali 25 těchto jogurtů.</b></p>"} }],
 
-["firstfiller_item5-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně pronajímají byty. Dva realitní makléři (A a B) si povídají o bytech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten byt vedle parku, včera večer jsme pronajali všechen ten byt.</b></p>"} }],
+["firstfiller-item6", aj, {s: {html: "<p> Kontext: v současnosti se hodně pronajímají byty. Dva realitní makléři (A a B) si povídají o bytech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten byt vedle parku, včera večer jsme pronajali všechen ten byt.</b></p>"} }],
 
-["firstfiller1-item6-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí mnoho druhů piva. Dva pivovarníci (A a B) si povídají o pivu a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o pivo s pepřem, včera jsme v naší pivotéce prodali 5 těchto piv.</b></p>"} }],
+["firstfiller1-item7", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí mnoho druhů piva. Dva pivovarníci (A a B) si povídají o pivu a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o pivo s pepřem, včera jsme v naší pivotéce prodali 5 těchto piv.</b></p>"} }],
 
-["firstfiller_item6-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně kupují auta. Dva autoobchodníci (A a B) si povídají o autech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o to auto od značky X, včera jsme prodali všechno to auto.</b></p>"} }],
+["firstfiller-item8", aj, {s: {html: "<p> Kontext: v současnosti se hodně kupují auta. Dva autoobchodníci (A a B) si povídají o autech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o to auto od značky X, včera jsme prodali všechno to auto.</b></p>"} }],
 
-["firstfiller1-item7-good", aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>Pokud jde o kávu robustu, v přípravném kurzu jsme tuto kávu studovali.</b></p>"} }],
+["firstfiller1-item9", aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>Pokud jde o kávu robustu, v přípravném kurzu jsme tuto kávu studovali.</b></p>"} }],
 
 ];
