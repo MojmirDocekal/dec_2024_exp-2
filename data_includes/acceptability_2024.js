@@ -75,6 +75,4 @@ var items = [ ["sep", "Separator", { }],
 
 ["filler8", aj, {s: {html: "<p> Kontext: v současnosti se hodně kupují auta. Dva autoobchodníci (A a B) si povídají o autech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o to auto od značky X, včera jsme prodali všechno to auto.</b></p>"} }],
 
-["filler9", aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>Pokud jde o kávu robustu, v přípravném kurzu jsme tuto kávu studovali.</b></p>"} }],
-
 ];
