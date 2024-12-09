@@ -1,4 +1,4 @@
-var shuffleSequence = seq("intro", sepWith("sep",  seq("practice")), "practiceover", sepWith("sep", rshuffle(startsWith("first"), startsWith("filler"))));
+var shuffleSequence = seq("intro", sepWith("sep",  seq("practice")), "practiceover", sepWith("sep", rshuffle(startsWith("first"), startsWith("fillerfirst")), rshuffle(startsWith("second"), startsWith("fillersecond"))));
 
 var continueMessage = ["Klikni zde"];
 
@@ -28,8 +28,8 @@ var items = [ ["sep", "Separator", { }],
 	      ["intro", "Form", {continueMessage: "Pro vstup do experimentu, klikněte zde", html: { include: "example_intro.html" }}],
 
 	      ["practice", aj, {s: {html: "<p>Kontext: v českých obchodech se lahvová piva obvykle prodávají po 0.5 litru.</p><p>Věta: <b>Pokud jde o piva, tak v obchodě Petr koupil tři.  </b></p><p><i>Tato věta je v daném kontextu pořádku. Pokud souhlasíte, vyberte jednu z možností v pravém konci škály (nejspíš 5).</i></p>"}}],
-["practice", aj, {s: {html: "<p>Kontext: ve vinotékách se na začátku listopadu prodává první letošní víno.</p><p>Věta: <b>Pokud jde letošní víno, tak všechno letošní červené víno bylo už vyprodané.  </b></p><p><i>Tato věta je v daném kontextu v pořádku. Pokud souhlasíte, vyberte jednu z možností v pravém konci škály (nejspíš 5).</i></p>"}}],
-["practice", aj, {s: {html: "<p>Kontext: ve zverimexech se prodává mnoho druhů akvarijních rybiček, např. neonky, gupky, ...</p><p>Věta: <b>Pokud jde letošní neonky, tak Petr koupil všechnu neonku.  </b></p><p><i>Tato věta je v daném kontextu v pořádku, ale není gramatická. Pokud souhlasíte, vyberte jednu z možností v levém konci škály (nejspíš 1).</i></p>"}}],
+["practice", aj, {s: {html: "<p>Kontext: ve vinotékách se na začátku listopadu prodává první letošní víno.</p><p>Věta: <b>Pokud jde o letošní víno, tak všechno letošní červené víno bylo už vyprodané.  </b></p><p><i>Tato věta je v daném kontextu v pořádku. Pokud souhlasíte, vyberte jednu z možností v pravém konci škály (nejspíš 5).</i></p>"}}],
+["practice", aj, {s: {html: "<p>Kontext: ve zverimexech se prodává mnoho druhů akvarijních rybiček, např. neonky, gupky, ...</p><p>Věta: <b>Pokud jde o letošní neonky, tak Petr koupil všechnu neonku.  </b></p><p><i>Tato věta je v daném kontextu v pořádku, ale není gramatická. Pokud souhlasíte, vyberte jednu z možností v levém konci škály (nejspíš 1).</i></p>"}}],
 
 	      ["practiceover", "Message", {continueMessage: "Klikněte zde pro pokračování experimentu", html: ["div", ["p", "Zde končí přípravná část experimentu. Klikněte níže pro vstup do experimentu."]]}],
 
@@ -39,40 +39,40 @@ var items = [ ["sep", "Separator", { }],
 [["first-item2-num-nodef", 2], aj, {s: {html: "<p> Kontext: v současnosti je známo více než pět druhů medvědů. Dva zaměstnanci různých Zoo (A a B) si povídají o medvědech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o druhy medvědů, naše Zoo chová dva medvědy: hnědé a lední. </b></p>"}}],
 [["first-item2-num-def", 2], aj, {s: {html: "<p> Kontext: v současnosti je známo více než pět druhů medvědů. Dva zaměstnanci různých Zoo (A a B) si povídají o medvědech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o hnědého medvěda a ledního medvěda, naše Zoo chová tyto dva medvědy.  </b></p>"}}],
 
-[["first-item3-num-nodef", 3], aj, {s: {html: "<p>Kontext: v ČR je se pěstuje více než pět druhů ovocných stromů. Dva farmáři (A a B), každý z jiného regionu, si povídají o ovocných stromech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o druhy ovocných stromů, v našem regionu farmáři pěstují dva ovocné stromy: jabloně a hrušně.</b></p>"}}],
-[["first-item3-num-def", 3], aj, {s: {html: "<p>Kontext: v ČR je se pěstuje více než pět druhů ovocných stromů. Dva farmáři (A a B), každý z jiného regionu, si povídají o ovocných stromech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o jabloň a hrušeň, v našem regionu farmáři pěstují tyto dva ovocné stromy.</b></p>"}}],
+[["first-item3-num-nodef", 3], aj, {s: {html: "<p>Kontext: v ČR se pěstuje více než pět druhů ovocných stromů. Dva farmáři (A a B), každý z jiného regionu, si povídají o ovocných stromech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o druhy ovocných stromů, v našem regionu farmáři pěstují dva ovocné stromy: jabloně a hrušně.</b></p>"}}],
+[["first-item3-num-def", 3], aj, {s: {html: "<p>Kontext: v ČR se pěstuje více než pět druhů ovocných stromů. Dva farmáři (A a B), každý z jiného regionu, si povídají o ovocných stromech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o jabloň a hrušeň, v našem regionu farmáři pěstují tyto dva ovocné stromy.</b></p>"}}],
 
 [["first-item4-num-nodef", 4], aj, {s: {html: "<p>Kontext: Je známo několik druhů moru. Dva lékaři (A a B) si povídají o moru a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o typy moru, u nás běžné vakcíny hubí dva mory: dýmějový a septický.</b></p>"}}],
 [["first-item4-num-def", 4], aj, {s: {html: "<p>Kontext: Je známo několik druhů moru. Dva lékaři (A a B) si povídají o moru a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o dýmějový mor a septický mor, u nás běžné vakcíny hubí tyto dva mory.  </b></p>"}}],
 
 
-[["first-item5-nonum-nopl", 5], aj, {s: {html: "<p>Kontext: V současnosti je známo alespoň 300 druhů chobotnic. Dva rybáři (A a B) si povídají o chobotnicích a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o chobotnici obecnou, tak tradičně naši rybáři tuto chobotnici loví. </b></p>"}}],
-[["first-item5-nonum-pl", 5], aj, {s: {html: "<p>Kontext: V současnosti je známo alespoň 300 druhů chobotnic. Dva rybáři (A a B) si povídají o chobotnicích a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o chobotnici pacifickou a chobotnici obecnou, tak tradičně naši rybáři tyto chobotnice loví.</b></p>"}}],
+[["second-item5-nonum-nopl", 1], aj, {s: {html: "<p>Kontext: V současnosti je známo alespoň 300 druhů chobotnic. Dva rybáři (A a B) si povídají o chobotnicích a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o chobotnici obecnou, tak tradičně naši rybáři tuto chobotnici loví. </b></p>"}}],
+[["second-item5-nonum-pl", 1], aj, {s: {html: "<p>Kontext: V současnosti je známo alespoň 300 druhů chobotnic. Dva rybáři (A a B) si povídají o chobotnicích a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o chobotnici pacifickou a chobotnici obecnou, tak tradičně naši rybáři tyto chobotnice loví.</b></p>"}}],
 
-[["first-item6-nonum-nopl", 6], aj, {s: {html: "<p>Kontext: v současnosti je známo mnoho druhů ústřic. Dva prodavači v rybárně (A a B) si povídají o ústřicích a v reakci na to, co řekl A, B odpovídá: </p><p>Věta: <b>B: Pokud jde o ústřici jedlou, v naší zemi tuto ústřici chováme.</b></p>"}}],
-[["first-item6-nonum-pl", 6], aj, {s: {html: "<p>Kontext: v současnosti je známo mnoho druhů ústřic. Dva prodavači v rybárně (A a B) si povídají o ústřicích a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ústřici jedlou a ústřici obrovskou, v naší zemi tyto ústřice chováme.</b></p>"}}],
+[["second-item6-nonum-nopl", 2], aj, {s: {html: "<p>Kontext: v současnosti je známo mnoho druhů ústřic. Dva prodavači v rybárně (A a B) si povídají o ústřicích a v reakci na to, co řekl A, B odpovídá: </p><p>Věta: <b>B: Pokud jde o ústřici jedlou, v naší zemi tuto ústřici chováme.</b></p>"}}],
+[["second-item6-nonum-pl", 2], aj, {s: {html: "<p>Kontext: v současnosti je známo mnoho druhů ústřic. Dva prodavači v rybárně (A a B) si povídají o ústřicích a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ústřici jedlou a ústřici obrovskou, v naší zemi tyto ústřice chováme.</b></p>"}}],
 
-[["first-item7-nonum-nopl", 7], aj, {s: {html: "<p>Kontext: v současnosti je známo několik druhů kaktusů. Dva zahradníci (A a B) si povídají o kaktusech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kaktus hvězdnatý, v naší zahradě tento kaktus pěstujeme.  </b></p>"}}],
-[["first-item7-nonum-pl", 7], aj, {s: {html: "<p>Kontext: v současnosti je známo několik druhů kaktusů. Dva zahradníci (A a B) si povídají o kaktusech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kaktus hvězdnatý a kaktus sloupcovitý, v naší zahradě tyto kaktusy pěstujeme.</b></p>"}}],
+[["second-item7-nonum-nopl", 3], aj, {s: {html: "<p>Kontext: v současnosti je známo několik druhů kaktusů. Dva zahradníci (A a B) si povídají o kaktusech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kaktus hvězdnatý, v naší zahradě tento kaktus pěstujeme.  </b></p>"}}],
+[["second-item7-nonum-pl", 3], aj, {s: {html: "<p>Kontext: v současnosti je známo několik druhů kaktusů. Dva zahradníci (A a B) si povídají o kaktusech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kaktus hvězdnatý a kaktus sloupcovitý, v naší zahradě tyto kaktusy pěstujeme.</b></p>"}}],
 
-[["first-item8-nonum-nopl", 8], aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kávu robustu, v přípravném kurzu jsme tuto kávu studovali.</b></p>"}}],
-[["first-item8-nonum-pl", 8], aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kávu robustu a kávu arabiku, v přípravném kurzu jsme tyto kávy studovali.</b></p>"}}],
+[["second-item8-nonum-nopl", 4], aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kávu robustu, v přípravném kurzu jsme tuto kávu studovali.</b></p>"}}],
+[["second-item8-nonum-pl", 4], aj, {s: {html: "<p> Kontext: Je známo několik druhů kávy. Dva baristé (A a B) si povídají o kávě a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o kávu robustu a kávu arabiku, v přípravném kurzu jsme tyto kávy studovali.</b></p>"}}],
 
 
-["filler1-good", aj, {s: {html: "<p>Kontext: v současné době se vyrábí různé druhy minerálních vod. Dva obchodníci s nápoji (A a B) si povídají o minerálních vodách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o minerální vodu Mattoni, včera jsme prodali 153 těchto vod.</b></p>"} }],
+["fillerfirst1-good", aj, {s: {html: "<p>Kontext: v současné době se vyrábí různé druhy minerálních vod. Dva obchodníci s nápoji (A a B) si povídají o minerálních vodách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o minerální vodu Mattoni, včera jsme prodali 153 těchto vod.</b></p>"} }],
 
-["filler2-bad", aj, {s: {html: "<p>  Kontext: v současné době se hodně prodávají romány. Dva knihkupci (A a B) si povídají o knihách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o román od autora X, včera jsme prodali všechen jeho román.</b></p>"} }],
+["fillerfirst2-bad", aj, {s: {html: "<p>  Kontext: v současné době se hodně prodávají romány. Dva knihkupci (A a B) si povídají o knihách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o román od autora X, včera jsme prodali všechen jeho román.</b></p>"} }],
 
-["filler3-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů čokolád. Dva cukráři (A a B) si povídají o čokoládách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o čokoládu s oříšky, včera jsme prodali 15 těchto čokolád.</b></p>"} }],
+["fillerfirst3-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů čokolád. Dva cukráři (A a B) si povídají o čokoládách a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o čokoládu s oříšky, včera jsme prodali 15 těchto čokolád.</b></p>"} }],
 
-["filler4-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně prodávají obrazy. Dva galeristé (A a B) si povídají o obrazech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten portrét od malíře X, včera jsme prodali všechen jeho portrét.</b></p>"} }],
+["fillerfirst4-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně prodávají obrazy. Dva galeristé (A a B) si povídají o obrazech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten portrét od malíře X, včera jsme prodali všechen jeho portrét.</b></p>"} }],
 
-["filler5-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů jogurtů. Dva obchodníci s mléčnými výrobky (A a B) si povídají o jogurtech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o jogurt s jahodami, včera jsme prodali 25 těchto jogurtů.</b></p>"} }],
+["fillersecond5-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí několik druhů jogurtů. Dva obchodníci s mléčnými výrobky (A a B) si povídají o jogurtech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o jogurt s jahodami, včera jsme prodali 25 těchto jogurtů.</b></p>"} }],
 
-["filler6-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně pronajímají byty. Dva realitní makléři (A a B) si povídají o bytech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten byt vedle parku, včera večer jsme pronajali všechen ten byt.</b></p>"} }],
+["fillersecond6-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně pronajímají byty. Dva realitní makléři (A a B) si povídají o bytech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o ten byt vedle parku, včera večer jsme pronajali všechen ten byt.</b></p>"} }],
 
-["filler7-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí mnoho druhů piva. Dva pivovarníci (A a B) si povídají o pivu a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o pivo s pepřem, včera jsme v naší pivotéce prodali 5 těchto piv.</b></p>"} }],
+["fillersecond7-good", aj, {s: {html: "<p> Kontext: v současnosti se vyrábí mnoho druhů piva. Dva pivovarníci (A a B) si povídají o pivu a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o pivo s pepřem, včera jsme v naší pivotéce prodali 5 těchto piv.</b></p>"} }],
 
-["filler8-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně kupují auta. Dva autoobchodníci (A a B) si povídají o autech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o to auto od značky X, včera jsme prodali všechno to auto.</b></p>"} }],
+["fillersecond8-bad", aj, {s: {html: "<p> Kontext: v současnosti se hodně kupují auta. Dva autoobchodníci (A a B) si povídají o autech a v reakci na to, co řekl A, B odpovídá:</p><p>Věta: <b>B: Pokud jde o to auto od značky X, včera jsme prodali všechno to auto.</b></p>"} }],
 
 ];
